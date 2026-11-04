@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A personal profile website for Shine.">
+  <title>Shine | Personal Profile</title>
+  <style>
+    :root { --pink:#ec4899; --deep:#831843; --soft:#fff1f7; --ink:#30212a; }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; font-family: Arial, Helvetica, sans-serif; color: var(--ink);
+      background: linear-gradient(135deg, #fff7fb, #fce7f3);
+      line-height: 1.65;
+    }
+    header {
+      padding: 72px 20px 58px; text-align: center; color: white;
+      background: linear-gradient(135deg, #db2777, #9d174d);
+    }
+    header .tag { letter-spacing: 3px; text-transform: uppercase; font-size: .8rem; }
+    h1 { margin: 8px 0; font-size: clamp(2.5rem, 8vw, 4.5rem); }
+    header p { margin: 0 auto; max-width: 620px; font-size: 1.1rem; }
+    main { width: min(920px, 92%); margin: 32px auto 60px; }
+    section {
+      background: white; margin: 20px 0; padding: 26px;
+      border-radius: 18px; box-shadow: 0 8px 28px #83184312;
+    }
+    h2 { color: var(--deep); margin-top: 0; }
+    .chips { display:flex; flex-wrap:wrap; gap:10px; padding:0; list-style:none; }
+    .chips li { background:var(--soft); color:var(--deep); padding:8px 14px; border-radius:99px; }
+    .contact {
+      display:inline-block; margin-top:8px; padding:11px 18px; border-radius:99px;
+      background:var(--pink); color:white; text-decoration:none; font-weight:bold;
+    }
+    footer { text-align:center; padding:24px; color:#7b5265; font-size:.9rem; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="tag">Welcome to my page</div>
+    <h1>Hi, I'm Shine! 🌸</h1>
+    <p>A curious learner, creative thinker and aspiring entrepreneur.</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>About Me</h2>
+      <p>
+        I'm a student with an interest in technology, learning new skills and
+        turning creative ideas into real projects. I enjoy discovering how
+        things work, improving my knowledge and taking on new challenges.
+      </p>
+    </section>
+
+    <section>
+      <h2>My Interests</h2>
+      <ul class="chips">
+        <li>Information Technology</li>
+        <li>Web Design</li>
+        <li>Business & Entrepreneurship</li>
+        <li>Creativity</li>
+        <li>Learning New Skills</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>My Goals</h2>
+      <p>
+        I want to keep developing my technology skills, build useful projects,
+        grow my business ideas and make a positive impact through what I learn.
+      </p>
+    </section>
+
+    <section>
+      <h2>A Little More About Me</h2>
+      <p><strong>Favourite colour:</strong> Pink 💗</p>
+      <p><strong>Personal motto:</strong> Keep learning, keep growing and keep shining.</p>
+    </section>
+
+    <section>
+      <h2>Get in Touch</h2>
+      <p>I'd be happy to connect and share ideas.</p>
+      <!-- Add your preferred public email or social link below before publishing. -->
+      <a class="contact" href="mailto:YOUR-EMAIL@example.com">Contact Me</a>
+    </section>
+  </main>
+
+  <footer>Made with 💗 by Shine · © <span id="year"></span></footer>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
